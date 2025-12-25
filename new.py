@@ -40,19 +40,34 @@ name = "Sathya"
 
 # Weight Convertor Prog
 
-weight = float(input("Enter your weight = "))
+# weight = float(input("Enter your weight = "))
 
-unit = input("(K)g or (L)bs: ")
+# unit = input("(K)g or (L)bs: ")
 
-if unit == "K":
-    weight = weight * 2.205
-    unit = "Lbs."
+# if unit == "K":
+#     weight = weight * 2.205
+#     unit = "Lbs."
 
-elif unit == "L":
-    weight = weight / 2.205
-    unit = "Kgs."
+# elif unit == "L":
+#     weight = weight / 2.205
+#     unit = "Kgs."
 
-else:
-    print(f"{unit} was not valid")
+# else:
+#     print(f"{unit} was not valid")
 
-print(f"Your weight is: {round(weight, 1)} {unit}")
+# print(f"Your weight is: {round(weight, 1)} {unit}")
+
+temp = 24
+is_sunny = True
+
+if temp >= 28 and is_sunny:
+    print("It is HOT outside 🥵")
+    print("It is SUNNY ☀️")
+
+elif temp >= 0 and is_sunny:
+    print("It is COLD outside 🥶")
+    print("It is SUNNY ☀️")
+
+elif 28 > temp > 0 and is_sunny:
+    print("It is WARM outside 😐")
+    print("It is RAINY 🌧️")
