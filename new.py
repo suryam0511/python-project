@@ -29,9 +29,30 @@ name = "Sathya"
 # print(f"The {adjective1} fox {verb1} over the {adjective2} dog.")
 # print(f"The {noun1} is very {adjective3}.")     
 
-import math
-x = 16
+# import math
 
-result = math.sqrt(x)
+# radius = float(input("Enter the radius of the circle: "))
 
-print(result) 
+# result = math.sqrt(radius)
+
+# print(result) 
+
+
+# Weight Convertor Prog
+
+weight = float(input("Enter your weight = "))
+
+unit = input("(K)g or (L)bs: ")
+
+if unit == "K":
+    weight = weight * 2.205
+    unit = "Lbs."
+
+elif unit == "L":
+    weight = weight / 2.205
+    unit = "Kgs."
+
+else:
+    print(f"{unit} was not valid")
+
+print(f"Your weight is: {round(weight, 1)} {unit}")
