@@ -1,5 +1,11 @@
+
+
 #get the environment from user 
 
+import platform
+
+for i in range(5):
+        
 env = input("Enter the environment = ")
 
 print("The user input enc is",env)
